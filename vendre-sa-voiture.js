@@ -1,11 +1,3 @@
-
-document.addEventListener("DOMContentLoaded", function() {
-const scriptDiv = document.querySelector('.script_2004');
-const jsonString = scriptDiv.textContent;
-const jsonArray = JSON.parse(jsonString);
-console.log(jsonArray);
-});
-
 let Matches = 0;
 const vehicules = [{
 "Marque": "abarth",
@@ -1485,4 +1477,5 @@ function checkInputs() {
     }
   });
 */
+
 
