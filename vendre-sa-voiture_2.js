@@ -1430,17 +1430,29 @@ function checkInputs() {
   if (Matches === 1) {
       console.log(Matches);
       console.log("Congratulations! All criteria match for 1 car.");
-      fbq('track', 'Lead', {content_name: 'Yes interesting'});
+      dataLayer.push({
+        'event': 'gtm.click',
+        'eventAction': 'Yes interesting',
+        'eventID': 176
+      });
     } 
   //if founded 0 car
   if (Matches < 1) {
         console.log("Not interesting");
-        fbq('track', 'Lead', {content_name: 'Not interesting'});
+        dataLayer.push({
+          'event': 'gtm.click',
+          'eventAction': 'Not interesting',
+          'eventID': 176
+        });
     }
   //If founded more than 1 car
   if (Matches > 1) {
         console.log("Congratulations! All criteria match for More than 1 car");
-        fbq('track', 'Lead', {content_name: 'Yes interesting'});
+       dataLayer.push({
+          'event': 'gtm.click',
+          'eventAction': 'Yes interesting',
+          'eventID': 176
+        });
     }
 };
 
