@@ -1430,17 +1430,17 @@ function checkInputs() {
   if (Matches === 1) {
       console.log(Matches);
       console.log("Congratulations! All criteria match for 1 car.");
-      fbq('track', 'Lead', {content_name: 'Yes interesting'});
+      dataLayer.push({'event': ' not interesting', 'value': 'NOT interesting'});
     } 
   //if founded 0 car
   if (Matches < 1) {
         console.log("Not interesting");
-        fbq('track', 'Lead', {content_name: 'Not interesting'});
+        dataLayer.push({'event': 'interesting', 'value': 'YES interesting'});
     }
   //If founded more than 1 car
   if (Matches > 1) {
         console.log("Congratulations! All criteria match for More than 1 car");
-        fbq('track', 'Lead', {content_name: 'Yes interesting'});
+        dataLayer.push({'event': ' not interesting', 'value': 'NOT interesting'});
     }
 };
 
