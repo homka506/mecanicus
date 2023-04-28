@@ -1431,20 +1431,12 @@ function checkInputs() {
   if (Matches === 1) {
       console.log(Matches);
       console.log("Congratulations! All criteria match for 1 car.");
-      dataLayer.push({
-        'event': 'gtm.click',
-        'eventAction': 'Yes interesting',
-        'eventID': 176
-      });
+     dataLayer.push({'event': 'interesting', 'value': 'YES interesting'});
     } 
   //if founded 0 car
   if (Matches < 1) {
         console.log("Not interesting");
-        dataLayer.push({
-          'event': 'gtm.click',
-          'eventAction': 'Not interesting',
-          'eventID': 176
-        });
+         dataLayer.push({'event': ' not interesting', 'value': 'NOT interesting'});
     }
   //If founded more than 1 car
   if (Matches > 1) {
