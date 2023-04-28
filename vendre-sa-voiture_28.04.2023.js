@@ -1386,8 +1386,9 @@ const vehicules = [{
 "Kilométrage": 175000
 } ];
 
-document.getElementById("wf-form-Sell-car").addEventListener("submit", function(event) {
-  checkInputs(); 
+document.getElementById("envoyer").addEventListener("click", function(event) {
+
+  checkInputs();
 });
 
 
