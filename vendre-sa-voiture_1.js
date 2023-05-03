@@ -1435,7 +1435,7 @@ function checkInputs() {
   //if founded 0 car
   if (Matches < 1) {
         console.log("Not interesting");
-        dataLayer.push({'event': ' not interesting', 'value': 'NOT interesting'});
+        dataLayer.push({'event': 'not interesting', 'value': 'NOT interesting'});
     }
   //If founded more than 1 car
   if (Matches > 1) {
